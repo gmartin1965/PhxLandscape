@@ -5607,7 +5607,7 @@
                 detail: {
                   fontSize: 30,
                   color: getColor("danger"),
-                  offsetCenter: [0, "40%"],
+                  offsetCenter: [0, "30%"],
                 },
               },
             ],
