@@ -227,21 +227,42 @@
     const { getColor, getData, rgbaColor } = window.phoenix.utils;
     const $chartEl = document.querySelector(".echart-area-line-chart-example");
     const months = [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
+      "01-20",
+      "01-21",
+      "01-22",
+      "01-23",
+      "01-24",
+      "01-25",
+      "01-26",
+      "01-27",
+      "01-28",
+      "01-29",
+      "01-30",
+      "01-31",
+      "02-01",
+      "02-02",
+      "02-03",
+      "02-04",
+      "02-05",
+      "02-06",
+      "02-07",
+      "02-08",
+      "02-09",
+      "02-10",
+      "02-11",
+      "02-12",
+      "02-13",
+      "02-14",
+      "02-15",
+      "02-16",
+      "02-17",
+      "02-18",
+      "02-19",
     ];
     const data = [
       1020, 1160, 1300, 958, 1240, 1020, 1409, 1200, 1051, 1120, 1240, 1054,
+      1020, 1160, 1300, 958, 1240, 1020, 1409, 1200, 1051, 1120, 1240, 1054,
+      1020, 1160, 1300, 958, 1240, 1020, 1409,
     ];
 
     const tooltipFormatter = (params) => {
@@ -5535,11 +5556,11 @@
               show: true,
               width: 18,
               itemStyle: {
-                color: getColor("info"),
+                color: getColor("danger"),
               },
             },
             itemStyle: {
-              color: getColor("info"),
+              color: getColor("danger"),
               shadowColor: rgbaColor(getColor("primary"), 0.5),
               shadowBlur: 10,
               shadowOffsetX: 2,
@@ -5557,19 +5578,19 @@
             splitLine: {
               lineStyle: {
                 width: 2,
-                color: getColor("quaternary-color"),
+                color: getColor("danger"),
               },
             },
             axisLabel: {
               distance: 25,
-              color: getColor("quaternary-color"),
+              color: getColor("danger"),
             },
             anchor: {
               show: true,
               showAbove: true,
               size: 25,
               itemStyle: {
-                color: getColor("info"),
+                color: getColor("danger"),
               },
             },
             title: {
@@ -5578,14 +5599,14 @@
             detail: {
               valueAnimation: true,
               fontSize: 80,
-              offsetCenter: [0, "70%"],
+              offsetCenter: [0, "30%"],
             },
             data: [
               {
-                value: 70,
+                value: 30,
                 detail: {
                   fontSize: 30,
-                  color: getColor("quaternary-color"),
+                  color: getColor("danger"),
                   offsetCenter: [0, "40%"],
                 },
               },
@@ -6885,3 +6906,18 @@
   docReady(heatmapSingleSeriesChartInit);
 });
 //# sourceMappingURL=echarts-example.js.map
+
+/*
+var x = {
+  events: [
+    {
+      title: "Dallas Cowboys - Sprinkler Head Damage",
+      start: "2024-02-22",
+    },
+    {
+      title: "Ikea - Weedeater Left Behind",
+      start: "2024-02-23",
+    },
+  ],
+};
+*/
