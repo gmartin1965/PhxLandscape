@@ -3,7 +3,7 @@
 - To View on GitHub Pages, use the following url...
   - https://gmartin1965.github.io/PhxLandscape/ </br></br>
 - Upon Login
-  - If the User has access to more than one Organization, big buttons will display to allow the User to choose the Organization to work with during this Session. Then…</br>
+  - If the User has access to more than one Organization, big buttons will display to allow the User to choose the Organization to work with during this Session. Then…</br></br>
   - If the User has access to Crew Features and also to Admin Features, that User will see 2 big buttons.
     - Click Admin to put yourself into Admin mode.
     - Click the Crew Button to put yourself into Crew mode and do things a Driver of a Crew would do.</br></br>
@@ -55,6 +55,9 @@
       - Property Name
       - Elapsed Time for the Route
       - Remaining Estimated Time for the Route</br></br>
+  - Calendar (Work Orders)
+    - Filterable Calendar to Show Work Orders
+    - Should have Month, Week, and Daily Views</br></br>
 - Crew Setup
   - List Crews - from this list User will be able to...
     - Manage a Crew
@@ -69,9 +72,6 @@
     - Create a New Master Route
     - Question
       - Can an Area belong to more than one Master Route?</br></br>
-
-<div style="page-break-after: always"></div>
-
 - Daily Route Setup
   - List the Daily Routes for a given Date
     - The list should have a selector that allows User to choose a different day
