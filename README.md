@@ -1,9 +1,9 @@
 ## General
 
 - To View on GitHub Pages, use the following url...
-  - https://gmartin1965.github.io/PhxLandscape/
+  - https://gmartin1965.github.io/PhxLandscape/ </br></br>
 - Upon Login
-  - If the User has access to more than one Organization, big buttons will display to allow the User to choose the Organization to work with during this Session. Then…
+  - If the User has access to more than one Organization, big buttons will display to allow the User to choose the Organization to work with during this Session. Then…</br>
   - If the User has access to Crew Features and also to Admin Features, that User will see 2 big buttons.
     - Click Admin to put yourself into Admin mode.
     - Click the Crew Button to put yourself into Crew mode and do things a Driver of a Crew would do.</br></br>
@@ -14,13 +14,13 @@
   - Map (Toggle Between Assets and Properties)
     - The idea is that this will be a Card on the UI that will show a map of the service area for the company. Two toggles...
       - Assets View will show the bubbles indicating where all of the Assets tracked by the company are located. Trucks, Trailers, Heavy Equipment, Mowers, etc.
-      - Properties View will show bubbles indicating where all of the Properties are located. These are the Properties the company performs work for.
+      - Properties View will show bubbles indicating where all of the Properties are located. These are the Properties the company performs work for.</br></br>
   - Crew Status (Today Only)
     - Listing of all Crews and an indication of their current "status".
       - Property currently working on
       - Open Work Order Count
       - Remaining Property Count,
-      - Open Alert Count
+      - Open Alert Count</br></br>
   - KPI Section (Key Performance Indicators)
     - Number of Crews
       - This may be some indication of the Number of Crews working today / Number of Crews the company has defined. The goal would be something in the high 90's I would imagine. Not sure about this one.
@@ -37,17 +37,17 @@
     - Outstanding/Overdue Work Orders
       - Work Orders Outstanding Count
       - Work Orders Resolved Count
-      - These 2 may be combined into a graph (circle or pie of some sort)
+      - These 2 may be combined into a graph (circle or pie of some sort)</br></br>
   - Alerts
     - Listing of Alerts
     - Toggle Options to show Resolved/Unresolved/All
     - For Unresolved Alerts, order by oldest to newest
-    - For Resolved Alerts, order by newest to oldest
+    - For Resolved Alerts, order by newest to oldest</br></br>
   - Work Orders (Tickets)
     - Day, Week, Month Options
     - Toggle for Completed/Pending/All
     - For Pending Work Orders, order by oldest to newest
-    - For Completed Work Orders, order by newest to oldest
+    - For Completed Work Orders, order by newest to oldest</br></br>
   - Route List (Pick a Day)
     - List will include one row for each Route that is scheduled for the chosen day
     - List item will show
