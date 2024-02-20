@@ -2248,11 +2248,25 @@
           </ul>
         </div>
       </div>
-      <div class="navbar-vertical-footer">
-        <button
-          class="btn navbar-vertical-toggle border-0 fw-semibold w-100 white-space-nowrap d-flex align-items-center"><span
-            class="uil uil-left-arrow-to-left fs-8"></span><span class="uil uil-arrow-from-right fs-8"></span><span
-            class="navbar-vertical-footer-text ms-2">Collapsed View</span></button>
+      <div class="navbar-vertical-footer mb-3">
+        <ul class="nav">
+          <li class="mt-3">
+            <a class="nav-link label-1" href="iLandscape/index.html" role="button" data-bs-toggle=""
+              aria-expanded="false">
+              <div class="d-flex align-items-center">
+                <span class="nav-link-text-wrapper">
+                  <span class="nav-link-text ms-4">iLandscape</span>
+                </span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <button
+              class="btn navbar-vertical-toggle border-0 fw-semibold w-100 white-space-nowrap d-flex align-items-center"><span
+                class="uil uil-left-arrow-to-left fs-8"></span><span class="uil uil-arrow-from-right fs-8"></span><span
+                class="navbar-vertical-footer-text ms-2">Collapsed View</span></button>
+          </li>
+        </ul>
       </div>
     </nav>
     <nav class="navbar navbar-top fixed-top navbar-expand" id="navbarDefault">
@@ -3000,12 +3014,14 @@
                     <p>Display utility classes that apply to all breakpoints, from <code>xs </code>to <code>xxl </code>,
                       have no breakpoint abbreviation in them. This is because those classes are applied from
                       <code>min-width: 0;</code>and up, and thus are not bound by a media query. The remaining
-                      breakpoints, however, do include a breakpoint abbreviation.</p>
+                      breakpoints, however, do include a breakpoint abbreviation.
+                    </p>
                     <p class="mt-3">As such, the classes are named using the format:</p>
                     <ul>
                       <li><code>.d-{value} </code> for <code>xs </code></li>
                       <li><code>.d-{breakpoint}-{value} </code> for
-                        <code> sm</code>,<code> md</code>,<code> lg</code>,<code> xl</code>, and<code> xxl</code>,</li>
+                        <code> sm</code>,<code> md</code>,<code> lg</code>,<code> xl</code>, and<code> xxl</code>,
+                      </li>
                     </ul>
                     <p class="mt-3">Where value is one of:</p>
                     <ul>
@@ -3023,7 +3039,8 @@
                       the SCSS.</p>
                     <p>The media queries affect screen widths with the given breakpoint or larger. For
                       example,<code>.d-lg-none </code>sets <code>display: none;</code>on both <code>lg </code>and
-                      <code>xl </code>screens.</p>
+                      <code>xl </code>screens.
+                    </p>
                   </div>
                 </div>
               </div>

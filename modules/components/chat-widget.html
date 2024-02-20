@@ -2248,11 +2248,25 @@
           </ul>
         </div>
       </div>
-      <div class="navbar-vertical-footer">
-        <button
-          class="btn navbar-vertical-toggle border-0 fw-semibold w-100 white-space-nowrap d-flex align-items-center"><span
-            class="uil uil-left-arrow-to-left fs-8"></span><span class="uil uil-arrow-from-right fs-8"></span><span
-            class="navbar-vertical-footer-text ms-2">Collapsed View</span></button>
+      <div class="navbar-vertical-footer mb-3">
+        <ul class="nav">
+          <li class="mt-3">
+            <a class="nav-link label-1" href="iLandscape/index.html" role="button" data-bs-toggle=""
+              aria-expanded="false">
+              <div class="d-flex align-items-center">
+                <span class="nav-link-text-wrapper">
+                  <span class="nav-link-text ms-4">iLandscape</span>
+                </span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <button
+              class="btn navbar-vertical-toggle border-0 fw-semibold w-100 white-space-nowrap d-flex align-items-center"><span
+                class="uil uil-left-arrow-to-left fs-8"></span><span class="uil uil-arrow-from-right fs-8"></span><span
+                class="navbar-vertical-footer-text ms-2">Collapsed View</span></button>
+          </li>
+        </ul>
       </div>
     </nav>
     <nav class="navbar navbar-top fixed-top navbar-expand" id="navbarDefault">
@@ -3057,14 +3071,16 @@
                     <h5 class="mb-3">Without gulp based workflow</h5>
                     <p class="mb-2">To hide the chat widget, open <code>public/assets/js/config.js </code>in your
                       project directory and set <code>phoenixSupportChat: false </code>of
-                      <code>initialConfig </code>object.</p>
+                      <code>initialConfig </code>object.
+                    </p>
                     <pre class="scrollbar mb-5"><code class="lang-html">const initialConfig = {
   phoenixSupportChat: true || false,
   ...
 };
 </code></pre>
                     <p>At the bottom right corner, you will find the widget button. By clicking the button, the
-                      <code>.show-chat </code>class will toggle and the chat will be shown or hidden.</p>
+                      <code>.show-chat </code>class will toggle and the chat will be shown or hidden.
+                    </p>
                     <pre
                       class="scrollbar mt-3"><code class="language-html">&lt;div class=&quot;container-fluid support-chat show-chat&quot;&gt;&lt;/div&gt;</code></pre>
                   </div>
@@ -3086,7 +3102,8 @@
                   </div>
                   <div class="p-4 code-to-copy">
                     <p>Initially, the chat widget will appear at the bottom right corner, you can add
-                      <code>.support-chat-start </code>class to take it to the bottom left corner.</p>
+                      <code>.support-chat-start </code>class to take it to the bottom left corner.
+                    </p>
                     <pre
                       class="scrollbar mt-3"><code class="language-html">&lt;div class=&quot;support-chat-container support-chat-start&quot;&gt;&lt;/div&gt;</code></pre>
                   </div>

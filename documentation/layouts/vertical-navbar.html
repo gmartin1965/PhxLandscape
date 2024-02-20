@@ -2248,11 +2248,25 @@
           </ul>
         </div>
       </div>
-      <div class="navbar-vertical-footer">
-        <button
-          class="btn navbar-vertical-toggle border-0 fw-semibold w-100 white-space-nowrap d-flex align-items-center"><span
-            class="uil uil-left-arrow-to-left fs-8"></span><span class="uil uil-arrow-from-right fs-8"></span><span
-            class="navbar-vertical-footer-text ms-2">Collapsed View</span></button>
+      <div class="navbar-vertical-footer mb-3">
+        <ul class="nav">
+          <li class="mt-3">
+            <a class="nav-link label-1" href="iLandscape/index.html" role="button" data-bs-toggle=""
+              aria-expanded="false">
+              <div class="d-flex align-items-center">
+                <span class="nav-link-text-wrapper">
+                  <span class="nav-link-text ms-4">iLandscape</span>
+                </span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <button
+              class="btn navbar-vertical-toggle border-0 fw-semibold w-100 white-space-nowrap d-flex align-items-center"><span
+                class="uil uil-left-arrow-to-left fs-8"></span><span class="uil uil-arrow-from-right fs-8"></span><span
+                class="navbar-vertical-footer-text ms-2">Collapsed View</span></button>
+          </li>
+        </ul>
       </div>
     </nav>
     <nav class="navbar navbar-top fixed-top navbar-expand" id="navbarDefault">
@@ -3034,7 +3048,8 @@
           </div>
           <div class="p-4 code-to-copy">
             <p class="mb-0">Phoenix used the Bootstrap's <code>.navbar-expand{-sm|-md|-lg|-xl|-xxl} </code> classes in
-              <code>.navbar-vertical </code>element to decide when the navbar vertical will expand or not.</p>
+              <code>.navbar-vertical </code>element to decide when the navbar vertical will expand or not.
+            </p>
             <pre
               class="scrollbar mt-5"><code class="language-html">&lt;nav class=&quot;navbar navbar-vertical navbar-expand-lg&quot;&gt;&lt;/nav&gt;</code></pre>
           </div>
@@ -3064,7 +3079,8 @@
             <p class="mb-0">From your project directory, If you are using gulp version open
               <code>src/js/config.js </code>or if you are using directly from the public folder open
               <code>public/assets/js/config.js </code>and set <code>phoenixIsNavbarVerticalCollapsed: true </code>of
-              <code>initialConfig </code>object to collapse the Vertical Navigation by default</p>
+              <code>initialConfig </code>object to collapse the Vertical Navigation by default
+            </p>
             <pre class="scrollbar mt-5"><code class="lang-html">const initialConfig = {
   phoenixIsNavbarVerticalCollapsed: false,
   ...
@@ -3098,13 +3114,15 @@
             <p>From your project directory, If you are using gulp version open <code>src/js/config.js </code>or if you
               are using directly from the public folder open <code>public/assets/js/config.js </code>and set
               <code>phoenixNavbarVerticalStyle: 'darker' </code>of <code>initialConfig </code>object to collapse the
-              Vertical Navigation by default</p>
+              Vertical Navigation by default
+            </p>
             <pre class="scrollbar my-5"><code class="lang-html">const initialConfig = {
   phoenixNavbarVerticalStyle: 'default' || 'darker',
   ...
 };</code></pre>
             <p class="mb-0">Or to change navbar vertical color add
-              <code>data-navbar-appearance="darker" </code>attribute in navber-vertical </p>
+              <code>data-navbar-appearance="darker" </code>attribute in navber-vertical
+            </p>
             <pre
               class="scrollbar mt-3"><code class="language-html">&lt;nav class=&quot;navbar navbar-vertical navbar-expand-lg&quot; data-navbar-appearance=&quot;darker&quot;&gt;&lt;/nav&gt;</code></pre>
           </div>
@@ -3202,7 +3220,8 @@ or,
             <p class="my-2">To change the border color of the Navbar Vertical , update the SCSS variable
               <code>$navbar-vertical-border-color</code> in your <code>_user-variables.scss </code>or CSS variable
               <code>--phoenix-navbar-vertical-border-color</code> in your
-              <code>public/assets/css/user.css. </code>Example:</p>
+              <code>public/assets/css/user.css. </code>Example:
+            </p>
             <pre class="mb-4"><code class="language-css">//- _user-variables.scss
 $navbar-vertical-border-color: #31374a;
 or,
@@ -3212,7 +3231,8 @@ or,
             <p class="my-2">To change the label color of the Navbar Vertical , update the SCSS variable
               <code>$navbar-vertical-label-color</code> in your <code>_user-variables.scss </code>or CSS variable
               <code>--phoenix-navbar-vertical-label-color</code> in your
-              <code>public/assets/css/user.css. </code>Example:</p>
+              <code>public/assets/css/user.css. </code>Example:
+            </p>
             <pre class="mb-4"><code class="language-css">//- _user-variables.scss
 $navbar-vertical-label-color: #6e7891;
 or,
@@ -3222,7 +3242,8 @@ or,
             <p class="my-2">To change the link color of the Navbar Vertical , update the SCSS variable
               <code>$navbar-vertical-link-color</code> in your <code>_user-variables.scss </code>or CSS variable
               <code>--phoenix-navbar-vertical-link-color</code> in your
-              <code>public/assets/css/user.css. </code>Example:</p>
+              <code>public/assets/css/user.css. </code>Example:
+            </p>
             <pre class="mb-4"><code class="language-css">//- _user-variables.scss
 $navbar-vertical-link-color: #9fa6bc;
 or,
@@ -3232,7 +3253,8 @@ or,
             <p class="my-2">To change the link hover background of the Navbar Vertical , update the SCSS variable
               <code>$navbar-vertical-link-hover-bg</code> in your <code>_user-variables.scss </code>or CSS variable
               <code>--phoenix-navbar-vertical-link-hover-bg</code> in your
-              <code>public/assets/css/user.css. </code>Example:</p>
+              <code>public/assets/css/user.css. </code>Example:
+            </p>
             <pre class="mb-4"><code class="language-css">//- _user-variables.scss
 $navbar-vertical-link-hover-bg: #31374a;
 or,
@@ -3242,7 +3264,8 @@ or,
             <p class="my-2">To change the link hover color of the Navbar Vertical , update the SCSS variable
               <code>$navbar-vertical-link-hover-color</code> in your <code>_user-variables.scss </code>or CSS variable
               <code>--phoenix-navbar-vertical-link-hover-color</code> in your
-              <code>public/assets/css/user.css. </code>Example:</p>
+              <code>public/assets/css/user.css. </code>Example:
+            </p>
             <pre class="mb-4"><code class="language-css">//- _user-variables.scss
 $navbar-vertical-link-hover-color: #eff2f6;
 or,
@@ -3252,7 +3275,8 @@ or,
             <p class="my-2">To change the link active color of the Navbar Vertical , update the SCSS variable
               <code>$navbar-vertical-link-active-color</code> in your <code>_user-variables.scss </code>or CSS variable
               <code>--phoenix-navbar-vertical-link-active-color</code> in your
-              <code>public/assets/css/user.css. </code>Example:</p>
+              <code>public/assets/css/user.css. </code>Example:
+            </p>
             <pre class="mb-4"><code class="language-css">//- _user-variables.scss
 $navbar-vertical-link-active-color: #fff;
 or,
@@ -3272,7 +3296,8 @@ or,
             <p class="my-2">To change the dropdown indicator color of the Navbar Vertical , update the SCSS variable
               <code>$navbar-vertical-dropdown-indicator-color</code> in your <code>_user-variables.scss </code>or CSS
               variable <code>--phoenix-navbar-vertical-dropdown-indicator-color</code> in your
-              <code>public/assets/css/user.css. </code>Example:</p>
+              <code>public/assets/css/user.css. </code>Example:
+            </p>
             <pre class="mb-4"><code class="language-css">//- _user-variables.scss
 $navbar-vertical-dropdown-indicator-color: #8a94ad;
 or,
