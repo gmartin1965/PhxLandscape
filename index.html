@@ -3641,7 +3641,7 @@
   <script>
     // Ensure the DOM is fully loaded
     document.addEventListener("DOMContentLoaded", function () {
-      fetch('nav-vertical.html')
+      fetch('iLandscape/nav-vertical.html')
         .then(response => {
           // Check if the request was successful
           if (response.ok) {
@@ -3653,7 +3653,7 @@
         .then(html => document.getElementById('vert-nav').innerHTML = html)
         .catch(error => console.error('Error loading the file:', error));
 
-      fetch('../nav-top.html')
+      fetch('iLandscape/nav-top.html')
         .then(response => {
           // Check if the request was successful
           if (response.ok) {
