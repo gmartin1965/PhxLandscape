@@ -63,183 +63,7 @@
   <!--    Main Content-->
   <!-- ===============================================-->
   <main class="main" id="top">
-    <nav class="navbar navbar-vertical navbar-expand-lg">
-      <script>
-        var navbarStyle = window.config.config.phoenixNavbarStyle;
-        if (navbarStyle && navbarStyle !== "transparent") {
-          document
-            .querySelector("body")
-            .classList.add(`navbar-${navbarStyle}`);
-        }
-      </script>
-      <div class="collapse navbar-collapse" id="navbarVerticalCollapse">
-        <!-- scrollbar removed-->
-        <div class="navbar-vertical-content">
-          <ul class="navbar-nav flex-column" id="navbarVerticalNav">
-            <li class="nav-item">
-              <!-- parent pages-->
-              <div class="nav-item-wrapper">
-                <a class="nav-link dropdown-indicator label-1" href="#nv-home" role="button" data-bs-toggle="collapse"
-                  aria-expanded="true" aria-controls="nv-home">
-                  <div class="d-flex align-items-center">
-                    <div class="dropdown-indicator-icon">
-                      <span class="fas fa-caret-right"></span>
-                    </div>
-                    <span class="nav-link-icon"><span data-feather="pie-chart"></span></span><span
-                      class="nav-link-text">Dashboard</span>
-                  </div>
-                </a>
-
-              </div>
-            </li>
-            <li class="nav-item">
-              <!-- label-->
-              <p class="navbar-vertical-label">Maintenance</p>
-              <hr class="navbar-vertical-line" />
-              <div class="nav-item-wrapper">
-                <a class="nav-link label-1" href="pages/members.html" role="button" data-bs-toggle=""
-                  aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <span class="nav-link-icon"><span data-feather="users"></span></span><span
-                      class="nav-link-text-wrapper"><span class="nav-link-text">Properties</span></span>
-                  </div>
-                </a>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link label-1" href="pages/members.html" role="button" data-bs-toggle=""
-                  aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <span class="nav-link-icon"><span data-feather="users"></span></span><span
-                      class="nav-link-text-wrapper"><span class="nav-link-text">Crews</span></span>
-                  </div>
-                </a>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link label-1" href="pages/members.html" role="button" data-bs-toggle=""
-                  aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <span class="nav-link-icon"><span data-feather="users"></span></span><span
-                      class="nav-link-text-wrapper"><span class="nav-link-text">Routes</span></span>
-                  </div>
-                </a>
-              </div>
-
-              <div class="nav-item-wrapper">
-                <a class="nav-link label-1" href="pages/members.html" role="button" data-bs-toggle=""
-                  aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <span class="nav-link-icon"><span data-feather="users"></span></span><span
-                      class="nav-link-text-wrapper"><span class="nav-link-text">Work Orders</span></span>
-                  </div>
-                </a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <!-- label-->
-              <p class="navbar-vertical-label">Construction</p>
-              <hr class="navbar-vertical-line" />
-              <div class="nav-item-wrapper">
-                <a class="nav-link label-1" href="pages/members.html" role="button" data-bs-toggle=""
-                  aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <span class="nav-link-icon"><span data-feather="users"></span></span><span
-                      class="nav-link-text-wrapper"><span class="nav-link-text">Projects</span></span>
-                  </div>
-                </a>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link label-1" href="pages/members.html" role="button" data-bs-toggle=""
-                  aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <span class="nav-link-icon"><span data-feather="users"></span></span><span
-                      class="nav-link-text-wrapper"><span class="nav-link-text">Estimates</span></span>
-                  </div>
-                </a>
-              </div>
-
-
-
-            </li>
-            <li class="nav-item">
-              <!-- label-->
-              <p class="navbar-vertical-label">Reports</p>
-              <hr class="navbar-vertical-line" />
-
-              <div class="nav-item-wrapper">
-                <a class="nav-link label-1" href="pages/members.html" role="button" data-bs-toggle=""
-                  aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <span class="nav-link-icon"><span data-feather="users"></span></span><span
-                      class="nav-link-text-wrapper"><span class="nav-link-text">Maintenance</span></span>
-                  </div>
-                </a>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link label-1" href="pages/members.html" role="button" data-bs-toggle=""
-                  aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <span class="nav-link-icon"><span data-feather="users"></span></span><span
-                      class="nav-link-text-wrapper"><span class="nav-link-text">Construction</span></span>
-                  </div>
-                </a>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link label-1" href="pages/members.html" role="button" data-bs-toggle=""
-                  aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <span class="nav-link-icon"><span data-feather="users"></span></span><span
-                      class="nav-link-text-wrapper"><span class="nav-link-text">Other</span></span>
-                  </div>
-                </a>
-              </div>
-
-            </li>
-            <li class="nav-item">
-              <!-- label-->
-              <p class="navbar-vertical-label">Administration</p>
-              <hr class="navbar-vertical-line" />
-
-              <div class="nav-item-wrapper">
-                <a class="nav-link label-1" href="pages/members.html" role="button" data-bs-toggle=""
-                  aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <span class="nav-link-icon"><span data-feather="users"></span></span><span
-                      class="nav-link-text-wrapper"><span class="nav-link-text">Labor</span></span>
-                  </div>
-                </a>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link label-1" href="pages/members.html" role="button" data-bs-toggle=""
-                  aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <span class="nav-link-icon"><span data-feather="users"></span></span><span
-                      class="nav-link-text-wrapper"><span class="nav-link-text">Assets</span></span>
-                  </div>
-                </a>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link label-1" href="pages/members.html" role="button" data-bs-toggle=""
-                  aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <span class="nav-link-icon"><span data-feather="users"></span></span><span
-                      class="nav-link-text-wrapper"><span class="nav-link-text">Settings</span></span>
-                  </div>
-                </a>
-              </div>
-
-            </li>
-
-          </ul>
-        </div>
-      </div>
-      <div class="navbar-vertical-footer">
-        <button
-          class="btn navbar-vertical-toggle border-0 fw-semibold w-100 white-space-nowrap d-flex align-items-center">
-          <span class="uil uil-left-arrow-to-left fs-8"></span><span class="uil uil-arrow-from-right fs-8"></span><span
-            class="navbar-vertical-footer-text ms-2">Collapsed View</span>
-        </button>
-      </div>
-    </nav>
+    <div id="vert-nav"></div>
     <nav class="navbar navbar-top fixed-top navbar-expand" id="navbarDefault">
       <div class="collapse navbar-collapse justify-content-between">
         <div class="navbar-logo">
@@ -252,7 +76,7 @@
             <div class="d-flex align-items-center">
               <div class="d-flex align-items-center">
                 <img src="assets/img/icons/logo.png" alt="iLandscape" width="27" />
-                <p class="logo-text ms-2 d-none d-sm-block">iLandscape.net</p>
+                <p class="logo-text ms-2 d-none d-sm-block">iLandscape.net2</p>
               </div>
             </div>
           </a>
@@ -4464,6 +4288,7 @@
   <script src="assets/js/ecommerce-dashboard.js"></script>
   <script src="assets/js/echarts-example.js"></script>
   <script src="vendors/fullcalendar/main.min.js"></script>
+
   <script>
     // Ensure the DOM is fully loaded
     document.addEventListener("DOMContentLoaded", function () {
