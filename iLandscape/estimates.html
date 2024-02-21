@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html data-navigation-type="default" data-navbar-horizontal-shape="default" lang="en-US" dir="ltr">
+<script>
+  var pageTitle = 'iLandscape';
+  var breadcrumb = 'Estimates';
+</script>
 
 <head>
   <meta charset="utf-8">
@@ -8,7 +12,7 @@
   <!-- ===============================================-->
   <!--    Document Title-->
   <!-- ===============================================-->
-  <title>iLandscape</title>
+  <title></title>
   <!-- ===============================================-->
   <!--    Favicons-->
   <!-- ===============================================-->
@@ -48,20 +52,16 @@
     <nav class="navbar navbar-top fixed-top navbar-expand" id="navbarDefault">
     </nav>
     <div class="content">
-      <nav class="mb-2" aria-label="breadcrumb">
-        <ol class="breadcrumb mb-0">
-          <li class="breadcrumb-item"><a href="#!">iLandscape</a></li>
-          <li class="breadcrumb-item active">Estimates</li>
-        </ol>
+      <nav class="mb-2" aria-label="breadcrumb" id="breadcrumbNav">
       </nav>
-      <h2 class="text-bold text-body-emphasis mb-5">Estimates</h2>
-      <div id="estimates"
+      <h2 class="text-bold text-body-emphasis mb-5" id="pageH2"></h2>
+      <div id="meraki-content"
         data-list='{"valueNames":["customer","email","mobile_number","city","last_active","joined"],"page":10,"pagination":true}'>
         <div class="row align-items-center justify-content-between g-3 mb-4">
           <div class="col col-auto">
             <div class="search-box">
               <form class="position-relative">
-                <input class="form-control search-input search" type="search" placeholder="Search estimates"
+                <input class="form-control search-input search" type="search" placeholder="Search items"
                   aria-label="Search" />
                 <span class="fas fa-search search-box-icon"></span>
 
@@ -83,8 +83,7 @@
                 <tr>
                   <th class="white-space-nowrap fs-9 align-middle ps-0">
                     <div class="form-check mb-0 fs-8">
-                      <input class="form-check-input" id="checkbox-bulk-estimates-select" type="checkbox"
-                        data-bulk-select='{"body":"estimates-table-body"}' />
+                      <input class="form-check-input" type="checkbox" />
                     </div>
                   </th>
                   <th class="sort align-middle" scope="col" data-sort="customer" style="width:15%; min-width:200px;">
@@ -100,7 +99,7 @@
                     style="width:19%;  min-width:200px;">JOINED</th>
                 </tr>
               </thead>
-              <tbody class="list" id="estimates-table-body">
+              <tbody class="list">
                 <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                   <td class="fs-9 align-middle ps-0 py-3">
                     <div class="form-check mb-0 fs-8">
@@ -451,31 +450,8 @@
         </div>
       </div>
       <footer class="footer position-absolute">
-        <div class="row g-0 justify-content-between align-items-center h-100">
-          <div class="col-12 col-sm-auto text-center">
-            <p class="mb-0 mt-2 mt-sm-0 text-body">Thank you for creating with Phoenix<span
-                class="d-none d-sm-inline-block"></span><span class="d-none d-sm-inline-block mx-1">|</span><br
-                class="d-sm-none" />2024 &copy;<a class="mx-1" href="https://themewagon.com">Themewagon</a></p>
-          </div>
-          <div class="col-12 col-sm-auto text-center">
-            <p class="mb-0 text-body-tertiary text-opacity-85">v1.15.0</p>
-          </div>
-        </div>
       </footer>
     </div>
-    <script>
-      var navbarTopStyle = window.config.config.phoenixNavbarTopStyle;
-      var navbarTop = document.querySelector('.navbar-top');
-      if (navbarTopStyle === 'darker') {
-        navbarTop.setAttribute('data-navbar-appearance', 'darker');
-      }
-
-      var navbarVerticalStyle = window.config.config.phoenixNavbarVerticalStyle;
-      var navbarVertical = document.querySelector('.navbar-vertical');
-      if (navbarVertical && navbarVerticalStyle === 'darker') {
-        navbarVertical.setAttribute('data-navbar-appearance', 'darker');
-      }
-    </script>
   </main>
   <!-- ===============================================-->
   <!--    End of Main Content-->
@@ -501,7 +477,7 @@
 <script>
   // Ensure the DOM is fully loaded
   document.addEventListener("DOMContentLoaded", function () {
-    fetch('nav-vertical.html')
+    fetch('includes/nav-vertical.html')
       .then(response => {
         // Check if the request was successful
         if (response.ok) {
@@ -513,7 +489,7 @@
       .then(html => document.getElementById('vert-nav').innerHTML = html)
       .catch(error => console.error('Error loading the file:', error));
 
-    fetch('nav-top.html')
+    fetch('includes/nav-top.html')
       .then(response => {
         // Check if the request was successful
         if (response.ok) {
@@ -524,14 +500,43 @@
       })
       .then(html => document.getElementById('navbarDefault').innerHTML = html)
       .catch(error => console.error('Error loading the file:', error));
-  });
 
-  var navbarStyle = window.config.config.phoenixNavbarStyle;
-  if (navbarStyle && navbarStyle !== "transparent") {
-    document
-      .querySelector("body")
-      .classList.add(`navbar-${navbarStyle}`);
-  }
+    fetch('includes/footer.html')
+      .then(response => {
+        // Check if the request was successful
+        if (response.ok) {
+          return response.text();
+        } else {
+          throw new Error('Network response was not ok.');
+        }
+      })
+      .then(html => document.querySelector('footer').innerHTML = html)
+      .catch(error => console.error('Error loading the file:', error));
+
+    fetch('includes/breadcrumbNav.html')
+      .then(response => {
+        // Check if the request was successful
+        if (response.ok) {
+          return response.text();
+        } else {
+          throw new Error('Network response was not ok.');
+        }
+      })
+      .then(html => {
+        document.getElementById('breadcrumbNav').innerHTML = html;
+        document.title = pageTitle;
+        document.getElementById('breadcrumb').innerHTML = breadcrumb;
+        document.getElementById('pageH2').innerHTML = breadcrumb;
+      })
+      .catch(error => console.error('Error loading the file:', error));
+
+    var navbarStyle = window.config.config.phoenixNavbarStyle;
+    if (navbarStyle && navbarStyle !== "transparent") {
+      document
+        .querySelector("body")
+        .classList.add(`navbar-${navbarStyle}`);
+    }
+  });
 </script>
 
 </html>
