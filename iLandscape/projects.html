@@ -45,14 +45,6 @@
   <main class="main" id="top">
     <nav class="navbar navbar-vertical navbar-expand-lg" id="vert-nav">
     </nav>
-    <script>
-      var navbarStyle = window.config.config.phoenixNavbarStyle;
-      if (navbarStyle && navbarStyle !== "transparent") {
-        document
-          .querySelector("body")
-          .classList.add(`navbar-${navbarStyle}`);
-      }
-    </script>
     <nav class="navbar navbar-top fixed-top navbar-expand" id="navbarDefault">
     </nav>
     <div class="content">
@@ -533,6 +525,13 @@
       .then(html => document.getElementById('navbarDefault').innerHTML = html)
       .catch(error => console.error('Error loading the file:', error));
   });
+
+  var navbarStyle = window.config.config.phoenixNavbarStyle;
+  if (navbarStyle && navbarStyle !== "transparent") {
+    document
+      .querySelector("body")
+      .classList.add(`navbar-${navbarStyle}`);
+  }
 </script>
 
 </html>
