@@ -2,6 +2,8 @@
 
 - To View on GitHub Pages, use the following url...
   - https://gmartin1965.github.io/PhxLandscape/ </br></br>
+- To see the Obsidian Vault for this project, use the following url...
+  - https://publish.obsidian.md/greenroute/_Start+Here/Overview </br></br>
 - Upon Login
   - If the User has access to more than one Organization, big buttons will display to allow the User to choose the Organization to work with during this Session. Then…</br></br>
   - If the User has access to Crew Features and also to Admin Features, that User will see 2 big buttons.
