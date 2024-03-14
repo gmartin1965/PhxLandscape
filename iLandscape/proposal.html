@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal Form</title>
+</head>
+
+<body>
+    <h2>Proposal Form</h2>
+    <form action="/submit_proposal" method="POST">
+        <!-- Proposal Header -->
+        <fieldset>
+            <legend>Proposal Header</legend>
+            <label for="customer_name">Customer Name:</label>
+            <input type="text" id="customer_name" name="customer_name" required><br><br>
+
+            <label for="proposal_date">Proposal Date:</label>
+            <input type="date" id="proposal_date" name="proposal_date" required><br><br>
+
+            <label for="salesperson_name">Salesperson Name:</label>
+            <input type="text" id="salesperson_name" name="salesperson_name" required><br><br>
+
+            <!-- Add more fields as needed -->
+        </fieldset>
+
+        <!-- Proposal Details -->
+        <fieldset>
+            <legend>Proposal Details</legend>
+            <label for="service_description">Service Description:</label>
+            <textarea id="service_description" name="service_description" rows="4" cols="50"
+                required></textarea><br><br>
+
+            <label for="estimated_cost">Estimated Cost:</label>
+            <input type="number" id="estimated_cost" name="estimated_cost" required><br><br>
+
+            <!-- Add more fields as needed -->
+        </fieldset>
+
+        <!-- Additional Actions -->
+        <input type="submit" value="Submit Proposal">
+    </form>
+</body>
+
+</html>
