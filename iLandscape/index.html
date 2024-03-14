@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html data-navigation-type="default" data-navbar-horizontal-shape="default" lang="en-US" dir="ltr">
 <script>
-  var pageTitle = 'iLandscape';
+  var pageTitle = 'iLandscape2';
+  
 </script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
 <head>
   <meta charset="utf-8" />
@@ -12,7 +14,7 @@
   <!-- ===============================================-->
   <!--    Document Title-->
   <!-- ===============================================-->
-  <title>iLandscape</title>
+  <title>test2</title>
 
   <!-- ===============================================-->
   <!--    Favicons-->
@@ -3421,6 +3423,8 @@
     // Ensure the DOM is fully loaded
     document.addEventListener("DOMContentLoaded", function () {
       document.title = pageTitle;
+      
+  feather.replace();
 
       fetch('includes/nav-vertical.html')
         .then(response => {
