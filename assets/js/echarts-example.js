@@ -4833,17 +4833,24 @@
             },
             data: [
               {
-                value: 93,
-                name: "Working Crews",
+                value: 38,
+                name: "Organic Sales",
                 itemStyle: {
                   color: getColor("primary"),
                 },
               },
               {
-                value: 7,
-                name: "Not Working",
+                value: 42,
+                name: "Completed Construction",
                 itemStyle: {
                   color: getColor("danger"),
+                },
+              },
+              {
+                value: 20,
+                name: "Acqusitions",
+                itemStyle: {
+                  color: getColor("warning"),
                 },
               },
             ],

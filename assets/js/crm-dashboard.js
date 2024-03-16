@@ -897,7 +897,7 @@
           axisTick: false
         },
         yAxis: {
-          data: ['Closed Won', 'Objection', 'Offer', 'Qualify Lead', 'Created'],
+          data: ['Closed Won', 'Objection', 'Construction', 'Acquisition', 'Organic Growth'],
           type: 'category',
           axisPointer: { type: 'none' },
           axisTick: 'none',
