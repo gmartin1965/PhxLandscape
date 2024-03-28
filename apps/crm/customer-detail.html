@@ -1448,13 +1448,13 @@
                             <div class="col-12 col-sm-auto flex-1">
                               <h3>Crossland Construction</h3>
                               <p class="text-body-secondary">Customer Since 05/01/2008</p>
-                              <div><a class="me-2" href="#!"><span
-                                    class="fab fa-linkedin-in text-body-quaternary text-opacity-75 text-primary-hover"></span></a><a
-                                  class="me-2" href="#!"><span
-                                    class="fab fa-facebook text-body-quaternary text-opacity-75 text-primary-hover"></span></a><a
-                                  href="#!"><span
-                                    class="fab fa-twitter text-body-quaternary text-opacity-75 text-primary-hover"></span></a>
-                              </div>
+                              <div>
+                                <span
+                                    class="badge badge-phoenix badge-phoenix-success me-2">HOA</span>
+                                <span class="badge badge-phoenix badge-phoenix-danger me-2">Brown & Griffin</span>
+                                <span
+                                    class="badge badge-phoenix badge-phoenix-secondary">Key Relationship</span>
+                            </div>
                             </div>
                           </div>
                           <div class="d-flex flex-between-center border-top border-dashed pt-4">
@@ -1479,28 +1479,12 @@
                       </div>
                     </div>
                     <div class="col-12 col-md-5 col-xxl-12 mb-xxl-3">
-                      <div class="card h-100">
-                        <div class="card-body pb-3">
-                          <div class="d-flex align-items-center mb-3">
-                            <h3 class="me-1">Default Address</h3>
-                            <button class="btn btn-link p-0"><span
-                                class="fas fa-pen fs-8 ms-3 text-body-quaternary"></span></button>
-                          </div>
-                          <h5 class="text-body-secondary">Address</h5>
-                          <p class="text-body-secondary">123 Main Street<br />Prosper, Texas<br />USA</p>
-                          <div class="mb-3">
-                            <h5 class="text-body-secondary">Email</h5><a
-                              href="mailto:shatinon@jeemail.com">test@crossland.com</a>
-                          </div>
-                          <h5 class="text-body-secondary">Phone</h5><a class="text-body-secondary"
-                            href="tel:+1234567890">234-567-8901</a>
-                        </div>
-                      </div>
+                      
                     </div>
                     <div class="col-12">
                       <div class="card h-100">
                         <div class="card-body">
-                          <h3 class="mb-4">Notes on Customer</h3>
+                          <h3 class="mb-4">Notes</h3>
                           <textarea class="form-control mb-3" rows="4"></textarea>
                           <button class="btn btn-phoenix-primary w-100 mb-4">Add Note</button>
                           <div class="fs-9 fw-semibold pb-3 mb-4 border-bottom border-dashed">
@@ -1538,264 +1522,551 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-xxl-8">
-                  <div class="mb-6">
-                    <h3 class="mb-4">Maintenance Properties <span class="text-body-tertiary fw-normal">(6)</span></h3>
-                    <div class="border-top border-bottom border-translucent" id="customerOrdersTable"
-                      data-list='{"valueNames":["order","total","payment_status","fulfilment_status","delivery_type","date"],"page":6,"pagination":true}'>
-                      <div class="table-responsive scrollbar">
-                        <table class="table table-sm fs-9 mb-0">
-                          <thead>
-                            <tr>
-                              <th class="sort white-space-nowrap align-middle ps-0 pe-3" scope="col" data-sort="order"
-                                style="width:10%;">Property ID</th>
-                                <th class="sort white-space-nowrap align-middle ps-0 pe-3" scope="col" data-sort="order"
-                                style="width:10%;">Property Name</th>
-                              <th class="sort align-middle text-end pe-7" scope="col" data-sort="total" style="width:10%;">
-                                $ Rev/Mo</th>
-                              <th class="sort align-middle white-space-nowrap pe-3" scope="col" data-sort="payment_status"
-                                style="width:15%;">Status</th>
-                              <th class="sort align-middle white-space-nowrap text-start pe-3" scope="col"
-                                data-sort="fulfilment_status" style="width:20%;">Payment Status</th>
-                              <th class="sort align-middle white-space-nowrap text-start" scope="col"
-                                data-sort="delivery_type" style="width:30%;">Property Type</th>
-                                <th class="sort align-middle white-space-nowrap text-start" scope="col"
-                                data-sort="delivery_type" style="width:30%;">Open Work Orders</th>
-                              <th class="sort align-middle text-end pe-0" scope="col" data-sort="date">Last Activity</th>
-                              <th class="sort text-end align-middle pe-0 ps-5" scope="col"></th>
-                            </tr>
-                          </thead>
-                          <tbody class="list" id="customer-order-table-body">
-                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                              <td class="order align-middle white-space-nowrap ps-0"><a class="fw-semibold"
-                                  href="#!">2453</a></td>
-                                  <td class="order align-middle white-space-nowrap ps-0"><a class="fw-semibold"
-                                    href="#!">Gates of Prosper</a></td>
-                              <td class="total align-middle text-end fw-semibold pe-7 text-body-highlight">$8700</td>
-                              <td
-                                class="payment_status align-middle white-space-nowrap text-start fw-bold text-body-tertiary">
-                                <span class="badge badge-phoenix fs-10 badge-phoenix-success"><span
-                                    class="badge-label">Active</span><span class="ms-1" data-feather="check"
-                                    style="height:12.8px;width:12.8px;"></span></span>
-                              </td>
-                              <td
-                                class="fulfilment_status align-middle white-space-nowrap text-start fw-bold text-body-tertiary">
-                                <span class="badge badge-phoenix fs-10 badge-phoenix-success"><span class="badge-label">Current</span><span class="ms-1" data-feather="check"
-                                    style="height:12.8px;width:12.8px;"></span></span>
-                              </td>
-                              <td class="delivery_type align-middle white-space-nowrap text-body fs-9 text-start">Commercial</td>
-                              <td class="delivery_type align-middle white-space-nowrap text-body fs-9 text-start">3</td>
-                              <td class="date align-middle white-space-nowrap text-body-tertiary fs-9 ps-4 text-end">Dec 12,
-                                12:56 PM</td>
-                             
-                            </tr>
-                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                                <td class="order align-middle white-space-nowrap ps-0"><a class="fw-semibold"
-                                    href="#!">2453</a></td>
-                                    <td class="order align-middle white-space-nowrap ps-0"><a class="fw-semibold"
-                                      href="#!">Gates of Prosper</a></td>
-                                <td class="total align-middle text-end fw-semibold pe-7 text-body-highlight">$9200</td>
-                                <td
-                                  class="payment_status align-middle white-space-nowrap text-start fw-bold text-body-tertiary">
-                                  <span class="badge badge-phoenix fs-10 badge-phoenix-success"><span
-                                      class="badge-label">Active</span><span class="ms-1" data-feather="check"
-                                      style="height:12.8px;width:12.8px;"></span></span>
-                                </td>
-                                <td
-                                  class="fulfilment_status align-middle white-space-nowrap text-start fw-bold text-body-tertiary">
-                                  <span class="badge badge-phoenix fs-10 badge-phoenix-success"><span class="badge-label">Current</span><span class="ms-1" data-feather="check"
-                                      style="height:12.8px;width:12.8px;"></span></span>
-                                </td>
-                                <td class="delivery_type align-middle white-space-nowrap text-body fs-9 text-start">Commercial/Retail</td>
-                                <td class="delivery_type align-middle white-space-nowrap text-body fs-9 text-start">0</td>
-                                <td class="date align-middle white-space-nowrap text-body-tertiary fs-9 ps-4 text-end">Dec 12,
-                                  12:56 PM</td>
-                               
-                              </tr>
-                              <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                                <td class="order align-middle white-space-nowrap ps-0"><a class="fw-semibold"
-                                    href="#!">2454</a></td>
-                                    <td class="order align-middle white-space-nowrap ps-0"><a class="fw-semibold"
-                                      href="#!">Gates of Prosper</a></td>
-                                <td class="total align-middle text-end fw-semibold pe-7 text-body-highlight">$4000</td>
-                                <td
-                                  class="payment_status align-middle white-space-nowrap text-start fw-bold text-body-tertiary">
-                                  <span class="badge badge-phoenix fs-10 badge-phoenix-success"><span
-                                      class="badge-label">Active</span><span class="ms-1" data-feather="check"
-                                      style="height:12.8px;width:12.8px;"></span></span>
-                                </td>
-                                <td
-                                  class="fulfilment_status align-middle white-space-nowrap text-start fw-bold text-body-tertiary">
-                                  <span class="badge badge-phoenix fs-10 badge-phoenix-success"><span class="badge-label">Current</span><span class="ms-1" data-feather="check"
-                                      style="height:12.8px;width:12.8px;"></span></span>
-                                </td>
-                                <td class="delivery_type align-middle white-space-nowrap text-body fs-9 text-start">Retail</td>
-                                <td class="delivery_type align-middle white-space-nowrap text-body fs-9 text-start">2</td>
-                                <td class="date align-middle white-space-nowrap text-body-tertiary fs-9 ps-4 text-end">Dec 12,
-                                  12:56 PM</td>
-                               
-                              </tr>
-                              <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                                <td class="order align-middle white-space-nowrap ps-0"><a class="fw-semibold"
-                                    href="#!">2455</a></td>
-                                    <td class="order align-middle white-space-nowrap ps-0"><a class="fw-semibold"
-                                      href="#!">Gates of Prosper</a></td>
-                                <td class="total align-middle text-end fw-semibold pe-7 text-body-highlight">$8700</td>
-                                <td
-                                  class="payment_status align-middle white-space-nowrap text-start fw-bold text-body-tertiary">
-                                  <span class="badge badge-phoenix fs-10 badge-phoenix-warning"><span
-                                      class="badge-label">Inactive</span><span class="ms-1" data-feather="check"
-                                      style="height:12.8px;width:12.8px;"></span></span>
-                                </td>
-                                <td
-                                  class="fulfilment_status align-middle white-space-nowrap text-start fw-bold text-body-tertiary">
-                                  <span class="badge badge-phoenix fs-10 badge-phoenix-success"><span class="badge-label">Current</span><span class="ms-1" data-feather="check"
-                                      style="height:12.8px;width:12.8px;"></span></span>
-                                </td>
-                                <td class="delivery_type align-middle white-space-nowrap text-body fs-9 text-start">Multifamily</td>
-                                <td class="delivery_type align-middle white-space-nowrap text-body fs-9 text-start">0</td>
-                                <td class="date align-middle white-space-nowrap text-body-tertiary fs-9 ps-4 text-end">Dec 12,
-                                  12:56 PM</td>
-                               
-                              </tr>
-                              <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                                <td class="order align-middle white-space-nowrap ps-0"><a class="fw-semibold"
-                                    href="#!">2453</a></td>
-                                    <td class="order align-middle white-space-nowrap ps-0"><a class="fw-semibold"
-                                      href="#!">Gates of Prosper</a></td>
-                                <td class="total align-middle text-end fw-semibold pe-7 text-body-highlight">$8700</td>
-                                <td
-                                  class="payment_status align-middle white-space-nowrap text-start fw-bold text-body-tertiary">
-                                  <span class="badge badge-phoenix fs-10 badge-phoenix-success"><span
-                                      class="badge-label">Active</span><span class="ms-1" data-feather="check"
-                                      style="height:12.8px;width:12.8px;"></span></span>
-                                </td>
-                                <td
-                                  class="fulfilment_status align-middle white-space-nowrap text-start fw-bold text-body-tertiary">
-                                  <span class="badge badge-phoenix fs-10 badge-phoenix-success"><span class="badge-label">Current</span><span class="ms-1" data-feather="check"
-                                      style="height:12.8px;width:12.8px;"></span></span>
-                                </td>
-                                <td class="delivery_type align-middle white-space-nowrap text-body fs-9 text-start">Retail</td>
-                                <td class="delivery_type align-middle white-space-nowrap text-body fs-9 text-start">5</td>
-                                <td class="date align-middle white-space-nowrap text-body-tertiary fs-9 ps-4 text-end">Dec 12,
-                                  12:56 PM</td>
-                               
-                              </tr>
-                              <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                                <td class="order align-middle white-space-nowrap ps-0"><a class="fw-semibold"
-                                    href="#!">2453</a></td>
-                                    <td class="order align-middle white-space-nowrap ps-0"><a class="fw-semibold"
-                                      href="#!">Gates of Prosper</a></td>
-                                <td class="total align-middle text-end fw-semibold pe-7 text-body-highlight">$8700</td>
-                                <td
-                                  class="payment_status align-middle white-space-nowrap text-start fw-bold text-body-tertiary">
-                                  <span class="badge badge-phoenix fs-10 badge-phoenix-primary"><span
-                                      class="badge-label">Paused</span><span class="ms-1" data-feather="check"
-                                      style="height:12.8px;width:12.8px;"></span></span>
-                                </td>
-                                <td
-                                  class="fulfilment_status align-middle white-space-nowrap text-start fw-bold text-body-tertiary">
-                                  <span class="badge badge-phoenix fs-10 badge-phoenix-success"><span class="badge-label">Current</span><span class="ms-1" data-feather="check"
-                                      style="height:12.8px;width:12.8px;"></span></span>
-                                </td>
-                                <td class="delivery_type align-middle white-space-nowrap text-body fs-9 text-start">Industrial Park</td>
-                                <td class="delivery_type align-middle white-space-nowrap text-body fs-9 text-start">1</td>
-                                <td class="date align-middle white-space-nowrap text-body-tertiary fs-9 ps-4 text-end">Dec 12,
-                                  12:56 PM</td>
-                               
-                              </tr>
-                      
-                          </tbody>
-                        </table>
-                      </div>
-                      <div class="row align-items-center justify-content-between py-2 pe-0 fs-9">
-                        <div class="col-auto d-flex">
-                          <p class="mb-0 d-none d-sm-block me-3 fw-semibold text-body" data-list-info="data-list-info"></p><a
-                            class="fw-semibold" href="#!" data-list-view="*">View all<span class="fas fa-angle-right ms-1"
-                              data-fa-transform="down-1"></span></a><a class="fw-semibold d-none" href="#!"
-                            data-list-view="less">View Less<span class="fas fa-angle-right ms-1"
-                              data-fa-transform="down-1"></span></a>
-                        </div>
-                        <div class="col-auto d-flex">
-                          <button class="page-link" data-list-pagination="prev"><span
-                              class="fas fa-chevron-left"></span></button>
-                          <ul class="mb-0 pagination"></ul>
-                          <button class="page-link pe-0" data-list-pagination="next"><span
-                              class="fas fa-chevron-right"></span></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mb-6">
-                    <h3 class="mb-4">Construction Projects <span class="text-body-tertiary fw-normal">(3)</span></h3>
-                    <div class="border-translucent border-top border-bottom" id="customerWishlistTable"
-                      data-list='{"valueNames":["products","color","size","price","quantity","total"],"page":5,"pagination":true}'>
-                      <div class="table-responsive scrollbar">
-                        <table class="table fs-9 mb-0">
-                          <thead>
-                            <tr>
-                              <th class="sort white-space-nowrap align-middle fs-10" scope="col" style="width:5%;"></th>
-                              <th class="sort white-space-nowrap align-middle" scope="col" style="width:35%; min-width:250px;"
-                                data-sort="products">Description</th>
-                              <th class="sort align-middle" scope="col" data-sort="color" style="width:15%;">Revenue</th>
-                              <th class="sort align-middle" scope="col" data-sort="size" style="width:10%;">Status</th>
-                              <th class="sort align-middle text-end" scope="col" data-sort="price" style="width:15%;">Start Date
-                              </th>
-                              <th class="sort align-middle text-end" scope="col" data-sort="total" style="width:15%;">Completion Date
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody class="list" id="customer-wishlist-table-body">
-                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                              <td class="align-middle white-space-nowrap py-1"></td>
-                              <td class="products align-middle">Gates of Prosper Phase 3</td>
-                              <td class="color align-middle white-space-nowrap fs-9 text-body">$1,323,500</td>
-                              <td class="size align-middle white-space-nowrap text-body-tertiary fs-9 fw-semibold">In Progress</td>
-                              <td class="price align-middle text-body fs-9 fw-semibold text-end">2/5/24</td>
-                              <td class="total align-middle fw-bold text-body-highlight text-end">7/1/24</td>
-                            </tr>
-                            <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                                <td class="align-middle white-space-nowrap py-1"></td>
-                                <td class="products align-middle">Glendenning Farms</td>
-                                <td class="color align-middle white-space-nowrap fs-9 text-body">$805,000</td>
-                                <td class="size align-middle white-space-nowrap text-body-tertiary fs-9 fw-semibold">In Progress</td>
-                                <td class="price align-middle text-body fs-9 fw-semibold text-end">2/5/24</td>
-                                <td class="total align-middle fw-bold text-body-highlight text-end">7/1/24</td>
-                              </tr>
-                              <tr class="hover-actions-trigger btn-reveal-trigger position-static">
-                                <td class="align-middle white-space-nowrap py-1"></td>
-                                <td class="products align-middle">Dummy Project #3</td>
-                                <td class="color align-middle white-space-nowrap fs-9 text-body">$1,234,567</td>
-                                <td class="size align-middle white-space-nowrap text-body-tertiary fs-9 fw-semibold">In Progress</td>
-                                <td class="price align-middle text-body fs-9 fw-semibold text-end">2/5/24</td>
-                                <td class="total align-middle fw-bold text-body-highlight text-end">7/1/24</td>
-                              </tr>
-                            
-                           
-                            
-                          </tbody>
-                        </table>
-                      </div>
-                      <div class="row align-items-center justify-content-between py-2 pe-0 fs-9">
-                        <div class="col-auto d-flex">
-                          <p class="mb-0 d-none d-sm-block me-3 fw-semibold text-body" data-list-info="data-list-info"></p><a
-                            class="fw-semibold" href="#!" data-list-view="*">View all<span class="fas fa-angle-right ms-1"
-                              data-fa-transform="down-1"></span></a><a class="fw-semibold d-none" href="#!"
-                            data-list-view="less">View Less<span class="fas fa-angle-right ms-1"
-                              data-fa-transform="down-1"></span></a>
-                        </div>
-                        <div class="col-auto d-flex">
-                          <button class="page-link" data-list-pagination="prev"><span
-                              class="fas fa-chevron-left"></span></button>
-                          <ul class="mb-0 pagination"></ul>
-                          <button class="page-link pe-0" data-list-pagination="next"><span
-                              class="fas fa-chevron-right"></span></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="col-xl-7 col-xxl-8">
+
+
+                  <ul class="nav nav-underline fs-9 deal-details scrollbar flex-nowrap w-100 pb-1 mb-6" id="myTab"
+                      role="tablist" style="overflow-y: hidden;">
+                      <li class="nav-item text-nowrap me-2" role="presentation"><a class="nav-link active"
+                        id="contacts-tab" data-bs-toggle="tab" href="#tab-contacts" role="tab"
+                        aria-controls="tab-contacts" aria-selected="false" tabindex="-1"> <span
+                            class="fa-solid fa-clipboard me-2 tab-icon-color"></span>Contacts</a>
+                      </li>
+                      <li class="nav-item text-nowrap me-2" role="presentation"><a class="nav-link"
+                              id="details-tab" data-bs-toggle="tab" href="#tab-details" role="tab"
+                              aria-controls="tab-details" aria-selected="false" tabindex="-1"> <span
+                                  class="fa-solid fa-clipboard me-2 tab-icon-color"></span>Maintenance Properties</a>
+                      </li>
+                      <li class="nav-item text-nowrap me-2" role="presentation"><a class="nav-link" id="map-tab"
+                              data-bs-toggle="tab" href="#tab-map" role="tab" aria-controls="tab-map"
+                              aria-selected="false" tabindex="-1"> <span
+                                  class="fa-solid fa-map me-2 tab-icon-color"></span>Construction Projects</a></li>
+                     
                   
+                    
+
+                      <li class="nav-item text-nowrap me-2" role="presentation"><a class="nav-link"
+                              id="attachments-tab" data-bs-toggle="tab" href="#tab-attachments" role="tab"
+                              aria-controls="tab-attachments" aria-selected="true"> <span
+                                  class="fa-solid fa-paperclip me-2 tab-icon-color"></span>Attachments</a>
+                      </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade active show" id="tab-contacts" role="tabpanel"
+                    aria-labelledby="contacts-tab">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <h5 class="text-body-secondary">Contact Lists</h5>
+                            <p class="text-body-secondary">Show details of all the associated contacts</p>
+                        </div>
+                    </div>
+                    
+                   
+
+
                 </div>
+                      <div class="tab-pane fade active show" id="tab-details" role="tabpanel"
+                          aria-labelledby="details-tab">
+                          <div class="row">
+                              <div class="col-xl-12">
+                                  <h5 class="text-body-secondary">Property List</h5>
+                                  <p class="text-body-secondary">Split screen to show list of associated properties and map on the right</p>
+                              </div>
+                          </div>
+
+                         
+
+
+                      </div>
+                      <div class="tab-pane fade" id="tab-map" role="tabpanel" aria-labelledby="map-tab">
+                        <div class="row">
+                          <div class="col-xl-12">
+                              <h5 class="text-body-secondary">Property List</h5>
+                              <p class="text-body-secondary">Split screen to show list of associated Projects and map on the right</p>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="tab-pane fade" id="tab-calendar" role="tabpanel" aria-labelledby="calendar-tab">
+                              <h5>Revenue Calendar</h5>
+                              <div>
+                                  <table class="table table-bordered">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col" style="background-color: grey;">2024</th>
+                                          <th scope="col">Jan</th>
+                                          <th scope="col">Feb</th>
+                                          <th scope="col">Mar</th>
+                                          <th scope="col">Apr</th>
+                                          <th scope="col">May</th>
+                                          <th scope="col">Jun</th>
+                                          <th scope="col">Jul</th>
+                                          <th scope="col">Aug</th>
+                                          <th scope="col">Sep</th>
+                                          <th scope="col">Oct</th>
+                                          <th scope="col">Nov</th>
+                                          <th scope="col">Dec</th>
+                                          <th scope="col">Total</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">Landscape</th>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">Irrigation</th>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">Subcontractor</th>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                        </tr>
+                                        <tr">
+                                          <th scope="row">Other</th>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                        </tr>
+                                        <tr style="background-color: rgb(235, 233, 233)">
+                                          <th scope="row">Total</th>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table class="table table-bordered">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col" style="background-color: grey;" >2025</th>
+                                          <th scope="col">Jan</th>
+                                          <th scope="col">Feb</th>
+                                          <th scope="col">Mar</th>
+                                          <th scope="col">Apr</th>
+                                          <th scope="col">May</th>
+                                          <th scope="col">Jun</th>
+                                          <th scope="col">Jul</th>
+                                          <th scope="col">Aug</th>
+                                          <th scope="col">Sep</th>
+                                          <th scope="col">Oct</th>
+                                          <th scope="col">Nov</th>
+                                          <th scope="col">Dec</th>
+                                          <th scope="col">Total</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">Landscape</th>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">Irrigation</th>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">Subcontractor</th>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">Other</th>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                        </tr>
+                                        <tr style="background-color: rgb(235, 233, 233)">
+                                          <th scope="row">Total</th>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                              </div>
+                      </div>
+                      <div class="tab-pane fade" id="tab-route" role="tabpanel" aria-labelledby="route-tab">
+
+                      </div>
+
+                      <div class="tab-pane fade" id="tab-wo" role="tabpanel" aria-labelledby="wo-tab">
+                          <h2 class="mb-4">Work Orders</h2>
+                          <div class="row align-items-center g-0 justify-content-start mb-3">
+                              <div class="col-12 col-sm-auto">
+                                  <div class="search-box w-100 mb-2 mb-sm-0" style="max-width:30rem;">
+                                      <form class="position-relative">
+                                          <input class="form-control search-input search" type="search"
+                                              placeholder="Search Work Orders" aria-label="Search" />
+                                          <span class="fas fa-search search-box-icon"></span>
+
+                                      </form>
+                                  </div>
+                              </div>
+                              <div class="col-auto d-flex">
+                                  <p class="mb-0 ms-sm-3 fs-9 text-body-tertiary fw-bold"><span
+                                          class="fas fa-filter me-1 fw-extra-bold fs-10"></span>4 Work Orders</p>
+                                  <button class="btn btn-link p-0 ms-3 fs-9 text-primary fw-bold"><span
+                                          class="fas fa-sort me-1 fw-extra-bold fs-10"></span>Sorting</button>
+                              </div>
+                          </div>
+                          <div
+                              class="row justify-content-between align-items-md-center hover-actions-trigger btn-reveal-trigger border-translucent py-3 gx-0 border-top">
+                              <div class="col-12 col-lg-auto flex-1">
+                                  <div data-todo-offcanvas-toogle="data-todo-offcanvas-toogle"
+                                      data-todo-offcanvas-target="todoOffcanvas-1">
+                                      <div class="form-check mb-1 mb-md-0 d-flex align-items-center lh-1">
+                                          <input
+                                              class="form-check-input flex-shrink-0 form-check-line-through mt-0 me-2 form-check-input-undefined"
+                                              type="checkbox" id="checkbox-todo-0" />
+                                          <label class="form-check-label mb-0 fs-8 me-2 line-clamp-1"
+                                              for="checkbox-todo-0">Repair 3 Heads in Zone 4</label>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-12 col-lg-auto">
+                                  <div class="d-flex ms-4 lh-1 align-items-center">
+                                      <p class="text-body-tertiary fs-10 mb-md-0 me-2 me-lg-3 mb-0">04 Mar 2024
+                                      </p>
+                                      <div class="d-none d-lg-block end-0 position-absolute" style="top: 23%;">
+                                          <div class="hover-actions end-0">
+                                              <button
+                                                  class="btn btn-phoenix-secondary btn-icon me-1 fs-10 text-body px-0 me-1"><span
+                                                      class="fas fa-edit"></span></button>
+                                              <button
+                                                  class="btn btn-phoenix-secondary btn-icon fs-10 text-danger px-0"><span
+                                                      class="fas fa-trash"></span></button>
+                                          </div>
+                                      </div>
+                                      <div class="hover-lg-hide">
+                                          <p
+                                              class="text-body-tertiary fs-10 ps-lg-3 border-start-lg fw-bold mb-md-0 mb-0">
+                                              11:56 PM</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+
+
+                          <div
+                              class="row justify-content-between align-items-md-center hover-actions-trigger btn-reveal-trigger border-translucent py-3 gx-0 border-top">
+                              <div class="col-12 col-lg-auto flex-1">
+                                  <div data-todo-offcanvas-toogle="data-todo-offcanvas-toogle"
+                                      data-todo-offcanvas-target="todoOffcanvas-5">
+                                      <div class="form-check mb-1 mb-md-0 d-flex align-items-center lh-1">
+                                          <input
+                                              class="form-check-input flex-shrink-0 form-check-line-through mt-0 me-2 form-check-input-undefined"
+                                              type="checkbox" id="checkbox-todo-4" checked="checked" />
+                                          <label class="form-check-label mb-0 fs-8 me-2 line-clamp-1"
+                                              for="checkbox-todo-4">Full Irrigation System Test</label>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-12 col-lg-auto">
+                                  <div class="d-flex ms-4 lh-1 align-items-center">
+                                      <p class="text-body-tertiary fs-10 mb-md-0 me-2 me-lg-3 mb-0">21 Oct, 2022
+                                      </p>
+                                      <div class="d-none d-lg-block end-0 position-absolute" style="top: 23%;">
+                                          <div class="hover-actions end-0">
+                                              <button
+                                                  class="btn btn-phoenix-secondary btn-icon me-1 fs-10 text-body px-0 me-1"><span
+                                                      class="fas fa-edit"></span></button>
+                                              <button
+                                                  class="btn btn-phoenix-secondary btn-icon fs-10 text-danger px-0"><span
+                                                      class="fas fa-trash"></span></button>
+                                          </div>
+                                      </div>
+                                      <div class="hover-lg-hide">
+                                          <p
+                                              class="text-body-tertiary fs-10 ps-lg-3 border-start-lg fw-bold mb-md-0 mb-0">
+                                              03:45 PM</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div
+                              class="row justify-content-between align-items-md-center hover-actions-trigger btn-reveal-trigger border-translucent py-3 gx-0 border-top">
+                              <div class="col-12 col-lg-auto flex-1">
+                                  <div data-todo-offcanvas-toogle="data-todo-offcanvas-toogle"
+                                      data-todo-offcanvas-target="todoOffcanvas-6">
+                                      <div class="form-check mb-1 mb-md-0 d-flex align-items-center lh-1">
+                                          <input
+                                              class="form-check-input flex-shrink-0 form-check-line-through mt-0 me-2 form-check-input-undefined"
+                                              type="checkbox" id="checkbox-todo-5" checked="checked" />
+                                          <label class="form-check-label mb-0 fs-8 me-2 line-clamp-1"
+                                              for="checkbox-todo-5">Planning your
+                                              locations Customer data platform</label>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-12 col-lg-auto">
+                                  <div class="d-flex ms-4 lh-1 align-items-center">
+                                      <p class="text-body-tertiary fs-10 mb-md-0 me-2 me-lg-3 mb-0">14 Oct, 2022
+                                      </p>
+                                      <div class="d-none d-lg-block end-0 position-absolute" style="top: 23%;">
+                                          <div class="hover-actions end-0">
+                                              <button
+                                                  class="btn btn-phoenix-secondary btn-icon me-1 fs-10 text-body px-0 me-1"><span
+                                                      class="fas fa-edit"></span></button>
+                                              <button
+                                                  class="btn btn-phoenix-secondary btn-icon fs-10 text-danger px-0"><span
+                                                      class="fas fa-trash"></span></button>
+                                          </div>
+                                      </div>
+                                      <div class="hover-lg-hide">
+                                          <p
+                                              class="text-body-tertiary fs-10 ps-lg-3 border-start-lg fw-bold mb-md-0 mb-0">
+                                              10:00 PM</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div
+                              class="row justify-content-between align-items-md-center hover-actions-trigger btn-reveal-trigger border-translucent py-3 gx-0 border-top">
+                              <div class="col-12 col-lg-auto flex-1">
+                                  <div data-todo-offcanvas-toogle="data-todo-offcanvas-toogle"
+                                      data-todo-offcanvas-target="todoOffcanvas-7">
+                                      <div class="form-check mb-1 mb-md-0 d-flex align-items-center lh-1">
+                                          <input
+                                              class="form-check-input flex-shrink-0 form-check-line-through mt-0 me-2 form-check-input-undefined"
+                                              type="checkbox" id="checkbox-todo-6" checked="checked" />
+                                          <label class="form-check-label mb-0 fs-8 me-2 line-clamp-1"
+                                              for="checkbox-todo-6">Promotion of
+                                              technology</label>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-12 col-lg-auto">
+                                  <div class="d-flex ms-4 lh-1 align-items-center">
+                                      <p class="text-body-tertiary fs-10 mb-md-0 me-2 me-lg-3 mb-0">12 Oct, 2022
+                                      </p>
+                                      <div class="d-none d-lg-block end-0 position-absolute" style="top: 23%;">
+                                          <div class="hover-actions end-0">
+                                              <button
+                                                  class="btn btn-phoenix-secondary btn-icon me-1 fs-10 text-body px-0 me-1"><span
+                                                      class="fas fa-edit"></span></button>
+                                              <button
+                                                  class="btn btn-phoenix-secondary btn-icon fs-10 text-danger px-0"><span
+                                                      class="fas fa-trash"></span></button>
+                                          </div>
+                                      </div>
+                                      <div class="hover-lg-hide">
+                                          <p
+                                              class="text-body-tertiary fs-10 ps-lg-3 border-start-lg fw-bold mb-md-0 mb-0">
+                                              02:00 AM</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div><a class="fw-bold fs-9 mt-4" href="#!"><span class="fas fa-plus me-1"></span>Add
+                              new task</a>
+                      </div>
+                      <div class="tab-pane fade" id="tab-maintenance" role="tabpanel"
+                          aria-labelledby="maintenance-tab">
+
+                      </div>
+
+                      <div class="tab-pane fade" id="tab-attachments" role="tabpanel"
+                          aria-labelledby="attachments-tab">
+                          <h2 class="mb-4">Attachments</h2>
+                          <div class="border-top border-dashed pt-3 pb-4">
+                              <div class="d-flex flex-between-center">
+                                  <div class="d-flex mb-1"><span
+                                          class="fa-solid fa-image me-2 text-body-tertiary fs-9"></span>
+                                      <p class="text-body-highlight mb-0 lh-1">Main Gate.png</p>
+                                  </div>
+                                  <div class="btn-reveal-trigger">
+                                      <button
+                                          class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal"
+                                          type="button" data-bs-toggle="dropdown" data-boundary="window"
+                                          aria-haspopup="true" aria-expanded="false"
+                                          data-bs-reference="parent"><span
+                                              class="fas fa-ellipsis-h"></span></button>
+                                      <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item"
+                                              href="#!">Edit</a><a class="dropdown-item text-danger"
+                                              href="#!">Delete</a><a class="dropdown-item"
+                                              href="#!">Download</a><a class="dropdown-item" href="#!">Report
+                                              abuse</a></div>
+                                  </div>
+                              </div>
+                              <p class="fs-9 text-body-tertiary mb-2">
+                                  <span>768kB</span><span class="text-body-quaternary mx-1">|
+                                  </span>
+                                  <a href="#!">Project Mgr #2 </a>
+                                  <span class="text-body-quaternary mx-1">| </span>
+                                  <span class="text-nowrap">21st Dec, 12:56 PM</span>
+                              </p>
+                              <img class="rounded-2" src="../../assets/img/generic/40.jpeg" alt="" />
+                              <img class="rounded-2" src="../../assets/img/generic/gates.jpeg" alt="" />
+                          </div>
+                          <div class="border-top border-dashed py-4">
+                              <div class="d-flex flex-between-center">
+                                  <div>
+                                      <div class="d-flex align-items-center mb-1"><span
+                                              class="fa-solid fa-image me-2 fs-9 text-body-tertiary"></span>
+                                          <p class="text-body-highlight mb-0 lh-1">Contract.pdf</p>
+                                      </div>
+                                      <p class="fs-9 text-body-tertiary mb-0"><span>12.8 mB</span><span
+                                              class="text-body-quaternary mx-1">|</span><a href="#!">Justin Knox
+                                          </a><span class="text-body-quaternary mx-1">| </span><span
+                                              class="text-nowrap">19th Dec, 08:56 PM</span>
+                                      </p>
+                                  </div>
+                                  <div class="btn-reveal-trigger">
+                                      <button
+                                          class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal"
+                                          type="button" data-bs-toggle="dropdown" data-boundary="window"
+                                          aria-haspopup="true" aria-expanded="false"
+                                          data-bs-reference="parent"><span
+                                              class="fas fa-ellipsis-h"></span></button>
+                                      <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item"
+                                              href="#!">Edit</a><a class="dropdown-item text-danger"
+                                              href="#!">Delete</a><a class="dropdown-item"
+                                              href="#!">Download</a><a class="dropdown-item" href="#!">Report
+                                              abuse</a></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="border-top border-dashed py-4">
+                              <div class="d-flex flex-between-center">
+                                  <div>
+                                      <div class="d-flex align-items-center mb-1"><span
+                                              class="fa-solid fa-file-lines me-2 fs-9 text-body-tertiary"></span>
+                                          <p class="text-body-highlight mb-0 lh-1">Project.txt</p>
+                                      </div>
+                                      <p class="fs-9 text-body-tertiary mb-0"><span>123 kB</span><span
+                                              class="text-body-quaternary mx-1">| </span><a href="#!">Shantinan
+                                              Mekalan </a><span class="text-body-quaternary mx-1">| </span><span
+                                              class="text-nowrap">12th Dec, 12:56 PM</span>
+                                      </p>
+                                  </div>
+                                  <div class="btn-reveal-trigger">
+                                      <button
+                                          class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal"
+                                          type="button" data-bs-toggle="dropdown" data-boundary="window"
+                                          aria-haspopup="true" aria-expanded="false"
+                                          data-bs-reference="parent"><span
+                                              class="fas fa-ellipsis-h"></span></button>
+                                      <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item"
+                                              href="#!">Edit</a><a class="dropdown-item text-danger"
+                                              href="#!">Delete</a><a class="dropdown-item"
+                                              href="#!">Download</a><a class="dropdown-item" href="#!">Report
+                                              abuse </a></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
               </div>
             </div>
           
